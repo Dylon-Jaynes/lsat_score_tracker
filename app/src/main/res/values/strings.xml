@@ -25,7 +25,7 @@
     <string name="add_lsat_score_text">Add Score</string>
     <string name="practice_test_text">Practice Test</string>
     <string name="actual_test_text">Actual Test</string>
-    <string name="start_goals_activity_text">Goals</string>
+    <string name="start_goals_activity_text">LSAT Goals</string>
     <string name="start_lsat_scores_activity_text">LSAT Scores</string>
     <string name="start_hours_studied_activity_text">Hours Studied</string>
     <string name="hours_studied_text">Hours Studied:</string>
@@ -39,5 +39,5 @@
     <string name="study_goal_set_text_2">\"Your study goal in hours is: \"</string>
     <string name="goals_title_text">LSAT Goals</string>
     <string name="scores_title_text">LSAT Scores</string>
-    <string name="study_hours_title_text">Study Hours</string>
+    <string name="study_hours_title_text">Hours Studied</string>
 </resources>
