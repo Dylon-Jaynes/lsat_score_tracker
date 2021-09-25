@@ -7,11 +7,18 @@
     android:layout_height="match_parent"
     android:background="@color/gunmetal">
 
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+    \<TextView
+    android:id="@+id/study_hours_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:gravity="center"
+    android:text="@string/study_hours_title_text"
+    android:textColor="@color/white"
+    android:textSize="35sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textview_user_study_goal_description"
@@ -27,7 +34,7 @@
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+        app:layout_constraintTop_toBottomOf="@+id/study_hours_title" />
 
     <TextView
         android:id="@+id/textview_user_study_goal"

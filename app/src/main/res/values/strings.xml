@@ -37,4 +37,7 @@
     <string name="test_date_hint">Test Date</string>
     <string name="study_goal_set_text">You have not set a study goal yet. Please navigate to the goals page and set one.</string>
     <string name="study_goal_set_text_2">\"Your study goal in hours is: \"</string>
+    <string name="goals_title_text">LSAT Goals</string>
+    <string name="scores_title_text">LSAT Scores</string>
+    <string name="study_hours_title_text">Study Hours</string>
 </resources>

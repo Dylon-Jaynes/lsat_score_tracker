@@ -7,11 +7,18 @@
     android:layout_height="match_parent"
     android:background="@color/gunmetal">
 
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar"
+    <TextView
+        android:id="@+id/scores_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/scores_title_text"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
     <EditText
