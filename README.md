@@ -2,7 +2,7 @@
 This app is still in the development stage and is not an example of the final product!
 
 ## Description
-An android application that allows users to set a study goal, score goal and an anticipated LSAT test date. They can then add the scores they have previously achieved in either practice or actual LSAT tests or edit the amount of study hours they have spent preparing for the test. This app uses SharedPreferences to store data.
+An android application that allows users to set a study goal, score goal and an anticipated LSAT test date. They can then add the scores they have previously achieved in either practice or actual LSAT tests or edit the amount of study hours they have spent preparing for the test. This app uses SharedPreferences to store data and is composed of mainly activities.
 
 <p float="left">
 <img src="https://github.com/Notatrace280/lsat_score_tracker/blob/master/app/src/main/res/Screenshot_20210925-114053_LSAT%20Tracker.jpg" width=25% height=25% hspace="10"> 
