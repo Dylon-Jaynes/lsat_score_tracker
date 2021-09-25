@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/score_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gunmetal">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/edittext_lsat_score"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/lsat_score_text"
+        android:inputType="number"
+        app:layout_constraintDimensionRatio="5:1"
+        app:layout_constraintEnd_toStartOf="@+id/scores_guideline4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/scores_guideline1"
+        app:layout_constraintTop_toBottomOf="@id/scores_horizontal_guideline1" />
+
+    <EditText
+        android:id="@+id/edittext_date_taken"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/date_taken_text"
+        android:inputType="date"
+        app:layout_constraintDimensionRatio="5:1"
+        app:layout_constraintEnd_toStartOf="@+id/scores_guideline4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/scores_guideline1"
+        app:layout_constraintTop_toBottomOf="@id/scores_horizontal_guideline2" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintDimensionRatio="9:1"
+        app:layout_constraintEnd_toStartOf="@+id/scores_guideline4"
+        app:layout_constraintStart_toStartOf="@+id/scores_guideline1"
+        app:layout_constraintTop_toBottomOf="@id/scores_horizontal_guideline3">
+
+        <RadioButton
+            android:id="@+id/radiobutton_practice_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="@string/practice_test_text"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/radiobutton_actual_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:text="@string/actual_test_text"
+            android:textSize="15sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_add_lsat_score"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#4D000000"
+        android:enabled="false"
+        android:text="@string/add_lsat_score_text"
+        app:layout_constraintDimensionRatio="2.5:1"
+        app:layout_constraintTop_toBottomOf="@id/scores_horizontal_guideline4"
+        app:layout_constraintStart_toStartOf="@id/scores_guideline2"
+        app:layout_constraintEnd_toEndOf="@id/scores_guideline3"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/scores_guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/scores_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".30" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/scores_guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".70" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/scores_guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".90" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/scores_horizontal_guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".12" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/scores_horizontal_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".22" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/scores_horizontal_guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".32" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/scores_horizontal_guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".40" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

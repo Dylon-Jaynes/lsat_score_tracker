@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gunmetal">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/button_start_goals_activity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/start_goals_activity_text"
+        android:textSize="20sp"
+        app:backgroundTint="#4D000000"
+        app:layout_constraintBottom_toTopOf="@+id/button_start_lsat_scores_activity"
+        app:layout_constraintDimensionRatio="4:1"
+        app:layout_constraintEnd_toEndOf="@id/main_guideline2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/main_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <Button
+        android:id="@+id/button_start_lsat_scores_activity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/start_lsat_scores_activity_text"
+        android:textSize="20sp"
+        app:backgroundTint="#4D000000"
+        app:layout_constraintBottom_toTopOf="@+id/button_start_hours_studied_activity"
+        app:layout_constraintDimensionRatio="4:1"
+        app:layout_constraintEnd_toEndOf="@id/main_guideline2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/main_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/button_start_goals_activity" />
+
+    <Button
+        android:id="@+id/button_start_hours_studied_activity"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/start_hours_studied_activity_text"
+        android:textSize="20sp"
+        app:backgroundTint="#4D000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="4:1"
+        app:layout_constraintEnd_toEndOf="@id/main_guideline2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/main_guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/button_start_lsat_scores_activity" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.90" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
