@@ -11,18 +11,19 @@
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
             android:name=".activities.MainActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".activities.StudyHoursActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".activities.ScoresActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".activities.GoalsActivity"
-            android:exported="true" />
+            android:exported="false" />
 
-        <activity android:name=".activities.SplashActivity">
+        <activity android:name=".activities.SplashActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

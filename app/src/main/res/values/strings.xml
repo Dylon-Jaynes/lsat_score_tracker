@@ -40,4 +40,5 @@
     <string name="goals_title_text">LSAT Goals</string>
     <string name="scores_title_text">LSAT Scores</string>
     <string name="study_hours_title_text">Hours Studied</string>
+    <string name="score_title_text">Score:</string>
 </resources>

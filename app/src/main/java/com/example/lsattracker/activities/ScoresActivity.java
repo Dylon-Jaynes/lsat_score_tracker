@@ -9,11 +9,15 @@ import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioGroup;
 
 import com.example.lsattracker.R;
+import com.example.lsattracker.adapters.CustomAdapter;
+import com.example.lsattracker.data.Test;
 import com.example.lsattracker.fragments.DateFrag;
 import com.example.lsattracker.view_models.ScoresActivityViewModel;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 public class ScoresActivity extends AppCompatActivity {
@@ -25,6 +29,9 @@ public class ScoresActivity extends AppCompatActivity {
     private String SCORE = "score";
     private int parsableScore;
     private String validScore;
+    private RadioGroup radioGroup;
+    private Boolean isPracticeTest = true;
+    private ArrayList<Test> testArrayList = new ArrayList<Test>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +42,14 @@ public class ScoresActivity extends AppCompatActivity {
 
         dateTaken = findViewById(R.id.edittext_date_taken);
         score = findViewById(R.id.edittext_lsat_score);
+        radioGroup = findViewById(R.id.radioGroup);
+        int checkedButtonId = radioGroup.getCheckedRadioButtonId();
+        if (checkedButtonId == 0) {
+            isPracticeTest = false;
+        } else {
+            isPracticeTest = true;
+        }
+
 
         score.addTextChangedListener(inputTextWatcher);
         score.setOnFocusChangeListener(new View.OnFocusChangeListener() {
@@ -80,8 +95,16 @@ public class ScoresActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Date[] dates = scoresActivityViewModel.parseDates(dateTaken.getText().toString());
+
                 if(!scoresActivityViewModel.isValidDate(dates)){
                     dateTaken.setError("You cannot select a date in the future.");
+                } else {
+                    Test test = new Test();
+                    test.setScore(score.getText().toString());
+                    test.setDateTaken(dateTaken.getText().toString());
+                    test.setPracticeTest(isPracticeTest);
+                    testArrayList.add(test);
+                    CustomAdapter customAdapter = new CustomAdapter(testArrayList);
                 }
             }
         });

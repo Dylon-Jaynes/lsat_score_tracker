@@ -85,6 +85,38 @@
         app:layout_constraintStart_toStartOf="@id/scores_guideline2"
         app:layout_constraintEnd_toEndOf="@id/scores_guideline3"/>
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_add_lsat_score">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:id="@+id/textView_score_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/score_title_text" />
+
+            <TextView
+                android:id="@+id/textView_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView_date_taken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </androidx.cardview.widget.CardView>
+    </androidx.recyclerview.widget.RecyclerView>
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/scores_guideline1"
         android:layout_width="wrap_content"
@@ -140,5 +172,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent=".40" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
